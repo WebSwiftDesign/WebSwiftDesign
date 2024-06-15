@@ -92,6 +92,7 @@ th {
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px 0;
+    text-align: center;
 }
 
 .creation img {
@@ -100,12 +101,8 @@ th {
 }
 
 .buttons {
-    margin-top: 20px;
-    margin-bottom: 40px; /* Ajout d'espace avant le footer */
-    margin-top: 40px; /* Ajout d'espace avant le footer */
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
 }
 
 .button {
@@ -114,9 +111,11 @@ th {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px;
+    margin: 25px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    font-size: 25px;
 }
 
 .button:hover {
