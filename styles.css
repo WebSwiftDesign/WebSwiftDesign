@@ -74,3 +74,34 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #contact form {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .creation {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
