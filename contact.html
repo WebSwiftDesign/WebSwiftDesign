@@ -14,6 +14,7 @@
     <link rel="canonical" href="https://webswiftdesign.pro">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="valid_email.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -34,8 +35,6 @@
                 </ul>
             </nav>
         </header>
-        
-        
         
         <div class="content">
             <section id="contact">
@@ -68,37 +67,12 @@
                 </form>
             </section>
         </div>
+        
         <footer>
             <a href="privacy-policy.html">RGPD</a>
             <a href="contact.html">Contact</a>
             <p>&copy; 2024 Web Swift Design. Tous droits réservés.</p>
         </footer>
     </div>
-    <script>
-    function validateForm() {
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var consent = document.getElementById("consent").checked;
-        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        var phonePattern = /^[0-9]{10}$/;
-
-        if (!emailPattern.test(email)) {
-            alert("Veuillez entrer une adresse email valide.");
-            return false;
-        }
-
-        if (!phonePattern.test(phone)) {
-            alert("Veuillez entrer un numéro de téléphone valide.");
-            return false;
-        }
-
-        if (!consent) {
-            alert("Vous devez consentir au traitement de vos données personnelles.");
-            return false;
-        }
-
-        return true;
-    }
-    </script>
 </body>
 </html>
