@@ -13,20 +13,31 @@
     <meta property="og:url" content="https://votre-site-web.com">
     <link rel="canonical" href="https://votre-site-web.com">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Web Swift Design</h1>
-            <nav>
+            <a href="index.html" class="header-logo">
+                <h1>Web Swift Design</h1>
+            </a>
+            <button id="menu-toggle" class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="creations.html">Créations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="tarifs.html">Tarifs</a></li>
                 </ul>
             </nav>
         </header>
+        
+        
+        
+        
         <div class="content">
             <section>
                 <h2>Bienvenue chez Web Swift Design</h2>
@@ -48,60 +59,17 @@
                     <li><strong>Une large gamme de prestations :</strong> Du design à la cybersécurité, nous couvrons tous les aspects de la création et de la maintenance de sites web.</li>
                     <li><strong>Une attention particulière à la qualité :</strong> Chaque projet est réalisé avec soin et professionnalisme pour garantir votre satisfaction.</li>
                 </ul>
-            </section>
-            <section>
-                <h2>Nos Prestations</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Prestation</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Développement et design de site web</td>
-                            <td>Création de sites web responsives et performants.</td>
-                        </tr>
-                        <tr>
-                            <td>Optimisation SEO</td>
-                            <td>Optimisation de votre site pour améliorer son référencement sur les moteurs de recherche.</td>
-                        </tr>
-                        <tr>
-                            <td>Optimisation du temps de chargement</td>
-                            <td>Optimisation de la vitesse de chargement de votre site web.</td>
-                        </tr>
-                        <tr>
-                            <td>Cybersécurité</td>
-                            <td>Protection contre les attaques DDoS et autres menaces de cybersécurité.</td>
-                        </tr>
-                        <tr>
-                            <td>Hébergement</td>
-                            <td>Hébergement fiable et rapide pour votre site web, incluant la gestion des serveurs et les mises à jour de sécurité.</td>
-                        </tr>
-                        <tr>
-                            <td>Maintenance</td>
-                            <td>Maintenance régulière, mises à jour de contenu, et support technique pour assurer le bon fonctionnement de votre site.</td>
-                        </tr>
-                        <tr>
-                            <td>Modifications</td>
-                            <td>Deux modifications de contenu ou de fonctionnalités par an.</td>
-                        </tr>
-                        <tr>
-                            <td>Nom de Domaine Personnalisé</td>
-                            <td>Choix d'un nom de domaine personnalisé et renouvellement annuel.</td>
-                        </tr>
-                    </tbody>
-                </table>
                 <div class="buttons">
-                    <a href="creations.html" class="button">Nos clients / Exemples</a>
-                    <a href="tarifs.html" class="button">Découvrir nos tarifs</a>
-                    <a href="contact.html" class="button">Prendre contact</a>
+                    <a href="creations.html" class="button">Clients</a>
+                    <a href="tarifs.html" class="button">Tarifs</a>
+                    <a href="contact.html" class="button">Contact</a>
                 </div>
             </section>
         </div>
         <footer>
-            <p>&copy; 2024 Web Swift Design. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+            <a href="privacy-policy.html">RGPD</a>
+            <a href="contact.html">Contact</a>
+            <p>&copy; 2024 Web Swift Design. Tous droits réservés.</p>
         </footer>
     </div>
 </body>

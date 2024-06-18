@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,23 +17,123 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Styles pour le menu hamburger */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-icon.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-icon.change .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: #333;
+    }
+
+    header nav.open {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .creation {
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
 }
 
 .content {
@@ -133,49 +234,14 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    margin: 5px 0;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        text-align: center;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #contact form {
-        width: 100%;
-        padding: 0 20px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .button {
-        width: 100%;
-        text-align: center;
-    }
+footer a:hover {
+    text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    .creation {
-        margin: 5px 0;
-        padding: 5px;
-    }
-
-    table, th, td {
-        font-size: 14px;
-    }
+footer p {
+    margin-top: 10px;
 }

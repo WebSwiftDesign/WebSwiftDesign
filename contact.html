@@ -10,23 +10,33 @@
     <meta property="og:title" content="Contactez-nous - Web Swift Design">
     <meta property="og:description" content="Contactez Web Swift Design pour toutes vos questions et demandes de services. Nous sommes là pour vous aider à créer et maintenir votre site web.">
     <meta property="og:image" content="URL_de_votre_image_partage_social">
-    <meta property="og:url" content="https://votre-site-web.com/contact.html">
-    <link rel="canonical" href="https://votre-site-web.com/contact.html">
+    <meta property="og:url" content="https://webswiftdesign.pro">
+    <link rel="canonical" href="https://webswiftdesign.pro">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Web Swift Design</h1>
-            <nav>
+            <a href="index.html" class="header-logo">
+                <h1>Web Swift Design</h1>
+            </a>
+            <button id="menu-toggle" class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="creations.html">Créations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="tarifs.html">Tarifs</a></li>
                 </ul>
             </nav>
         </header>
+        
+        
+        
         <div class="content">
             <section id="contact">
                 <h2>Contactez-nous pour un Rendez-vous</h2>
@@ -59,7 +69,9 @@
             </section>
         </div>
         <footer>
-            <p>&copy; 2024 Web Swift Design. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+            <a href="privacy-policy.html">RGPD</a>
+            <a href="contact.html">Contact</a>
+            <p>&copy; 2024 Web Swift Design. Tous droits réservés.</p>
         </footer>
     </div>
     <script>

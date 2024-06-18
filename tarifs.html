@@ -13,14 +13,21 @@
     <meta property="og:url" content="https://votre-site-web.com/tarifs.html">
     <link rel="canonical" href="https://votre-site-web.com/tarifs.html">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Web Swift Design</h1>
-            <nav>
+            <a href="index.html" class="header-logo">
+                <h1>Web Swift Design</h1>
+            </a>
+            <button id="menu-toggle" class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="creations.html">Créations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="tarifs.html">Tarifs</a></li>
@@ -41,13 +48,37 @@
                     <tbody>
                         <tr>
                             <td>Formule Basique</td>
-                            <td>Site vitrine avec 5 pages. 49.99€/page supplémentaire.</td>
-                            <td>399.99€</td>
+                            <td>Site vitrine avec 5 pages. 49,99€/page supplémentaire.</td>
+                            <td>399,99€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Options</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Option</th>
+                            <th>Description</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Site Web Responsive</td>
+                            <td>Adaptabilité sur tous les appareils (ordinateurs, tablettes, mobiles).</td>
+                            <td>49,99€</td>
                         </tr>
                         <tr>
-                            <td>Formule Pro</td>
-                            <td>Site vitrine avec 10 pages. 49.99€/page supplémentaire.</td>
-                            <td>699.99€</td>
+                            <td>Option SEO</td>
+                            <td>Optimisation pour les moteurs de recherche.</td>
+                            <td>49,99€</td>
+                        </tr>
+                        <tr>
+                            <td>Option Cybersécurité</td>
+                            <td>Intégrité et sécurité du site internet au long de sa vie.</td>
+                            <td>9,99€</td>
                         </tr>
                     </tbody>
                 </table>
@@ -59,47 +90,33 @@
                         <tr>
                             <th>Abonnement</th>
                             <th>Inclus</th>
-                            <th>Prix Annuel</th>
+                            <th>Prix Mensuel/Annuel</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Hébergement</td>
                             <td>Hébergement fiable et rapide pour votre site web, incluant la gestion des serveurs et les mises à jour de sécurité.</td>
-                            <td>29.99€/an</td>
-                        </tr>
-                        <tr>
-                            <td>Cybersécurité</td>
-                            <td>Protection contre les attaques DDoS et autres menaces. Surveillance proactive et mises à jour de sécurité régulières.</td>
-                            <td>29.99€/an</td>
-                        </tr>
-                        <tr>
-                        <tr>
-                            <td>Maintenance</td>
-                            <td>Maintenance régulière, mises à jour de contenu, et support technique pour assurer le bon fonctionnement de votre site.</td>
-                            <td>29.99€/an</td>
-                        </tr>
-                        <tr>
-                            <td>Modifications</td>
-                            <td>Deux modifications de contenu ou de fonctionnalités par an.</td>
-                            <td>25€/an</td>
+                            <td>4,99€/mois</td>
                         </tr>
                         <tr>
                             <td>Nom de Domaine Personnalisé</td>
                             <td>Choix d'un nom de domaine personnalisé et renouvellement annuel.</td>
-                            <td>10€/an</td>
+                            <td>9,99€/an</td>
                         </tr>
                         <tr>
-                            <td>Pack Complet</td>
-                            <td>Inclut tous les abonnements annuels : Hébergement, Cybersécurité, Maintenance, Modifications, et Nom de Domaine Personnalisé.</td>
-                            <td>99.99€/an</td>
+                            <td>Modifications</td>
+                            <td>Trois modifications de contenu ou de fonctionnalités par an.</td>
+                            <td>29,99€/an</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
         </div>
         <footer>
-            <p>&copy; 2024 Web Swift Design. Tous droits réservés. | <a href="contact.html">Contactez-nous</a></p>
+            <a href="contact.html">Contactez-nous</a>
+            <a href="privacy-policy.html">RGPD</a>
+            <p>&copy; 2024 Web Swift Design. Tous droits réservés.</p>
         </footer>
     </div>
 </body>
